@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "GVjk6dL1g+O2COYYbM6rMUTdGbgw/wmN6PtEZNBT5MbkZFD7NezTWBvYJsXGXEPTLcpl7DQlUrQCxyJqcVCVIw==",
+  "success": true,
+  "projectFilePath": "/Users/gkoperczak/Work/Customers/Nordcloud/poznan-test/apps-code/poznan-api-mid-broken/poznan-api-mid-broken.csproj",
+  "expectedPackageFiles": [
+    "/Users/gkoperczak/.nuget/packages/azure.core/1.33.0/azure.core.1.33.0.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/azure.identity/1.4.0/azure.identity.1.4.0.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/azure.security.keyvault.secrets/4.5.0/azure.security.keyvault.secrets.4.5.0.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/microsoft.identity.client/4.30.1/microsoft.identity.client.4.30.1.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/microsoft.identity.client.extensions.msal/2.18.4/microsoft.identity.client.extensions.msal.2.18.4.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/system.diagnostics.diagnosticsource/4.6.0/system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/system.security.cryptography.protecteddata/4.5.0/system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
+    "/Users/gkoperczak/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
