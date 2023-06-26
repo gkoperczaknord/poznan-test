@@ -1,0 +1,47 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: poznan-api-mid-broken
+  labels:
+    app.kubernetes.io/name: poznan-api-mid-broken
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: poznan-api-mid-broken
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: poznan-api-mid-broken
+    spec:
+      serviceAccountName: satest-mid
+      affinity:
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
+                matchLabels:
+                  app.kubernetes.io/name: poznan-api-mid-broken
+              topologyKey: kubernetes.io/hostname
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              podAffinityTerm:
+                labelSelector:
+                  matchLabels:
+                    app.kubernetes.io/name: poznan-api-mid-broken
+                topologyKey: topology.kubernetes.io/zone
+      containers:
+        - name: poznan-api-mid
+          image: crgkoperczakshared.azurecr.io/poznan-api-mid-broken:0.1
+          envFrom:
+            - configMapRef:
+                name: common-mid-broken
+          ports:
+            - name: 'app-port'
+              containerPort: 5000
+          resources:
+            requests:
+              cpu: 100m
+              memory: 512Mi
+            limits:
+              memory: 512Mi

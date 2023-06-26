@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: test-broken
+resources:
+- ../../base
+configMapGenerator:
+- name: common-mid
+  envs:
+  - common.env
+patches:
+- path: patch-serviceaccount.yaml
+- patch: |-
+    - op: replace
+      path: /spec/rules/0/host
+      value: poznan.getitserv.pl
+  target:
+    kind: Ingress
+    name: poznan-api-mid-broken
